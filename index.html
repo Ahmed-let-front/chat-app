@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="the front end mentor challenge" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- font rubik -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- master css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Frontend Mentor | chat App</title>
+  </head>
+  <body>
+    <span class="bg-purple bg"></span>
+    <span class="bg-gray bg"></span>
+    <main class="app-container">
+      <section class="booking-info">
+        <h1>Simple booking</h1>
+        <p>
+          Stay in touch with our dog walkers through the chat interface. This
+          makes it easy to discuss arrangements and make bookings. Once the walk
+          has been completed you can rate your walker and book agian all
+          throught the chat.
+        </p>
+      </section>
+      <article class="phone-mockup">
+        <header class="chat-header">
+          <div class="user-info">
+            <button class="back-btn btn-header-shape" aria-label="Go back">
+              <i class="fa-solid fa-angle-left"></i>
+            </button>
+            <div class="user-for-design">
+              <img
+                src="./images/avatar.jpg"
+                alt="Samuel Green"
+                class="avatar"
+              />
+              <div class="details">
+                <h2 class="name-user">Samuel Green</h2>
+                <span class="status">Available to Walk</span>
+              </div>
+            </div>
+            <button class="menu-btn btn-header-shape" aria-label="More options">
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+            </button>
+          </div>
+        </header>
+        <div class="chat-body">
+          <div class="message-left">
+            <p>That sounds great. I’d be happy to discuss more</p>
+          </div>
+          <div class="message-left" style="margin-block-end: 1rem">
+            <p>Could you send over some pictures of your dog, please?</p>
+          </div>
+          <div class="media-group">
+            <img src="./images/dog-image-1.jpg" alt="Dog playing" />
+            <img src="./images/dog-image-2.jpg" alt="Dog sitting" />
+            <img src="./images/dog-image-3.jpg" alt="Dog running" />
+          </div>
+          <div class="message-right">
+            <p>Here are a few pictures. a She’s a happy girl!</p>
+          </div>
+          <div class="message-right">
+            <p>Can you make it?</p>
+          </div>
+          <div class="message-left">
+            <p>
+              She looks so happy! The time we discussed works. How long shall I
+              take her out for?
+            </p>
+          </div>
+          <form class="plans-form">
+            <label class="plan-option-left">
+              <input type="radio" name="plan" value="30min" />
+              <div class="plan-content">
+                <span class="circle"></span>
+                <span class="text">30 minute walk</span>
+                <span class="price">$29</span>
+              </div>
+            </label>
+            <label class="plan-option-left">
+              <input type="radio" name="plan" value="1hour" />
+              <div class="plan-content">
+                <span class="circle"></span>
+                <span class="text">1 hour walk</span>
+                <span class="price">$49</span>
+              </div>
+            </label>
+          </form>
+        </div>
+        <form class="input-area">
+          <input
+            type="text"
+            placeholder="Type a message…"
+            aria-label="Type message"
+          />
+          <button type="button" class="send-btn" aria-label="Send message">
+            <i class="fa-solid fa-angle-right"></i>
+          </button>
+        </form>
+      </article>
+    </main>
+    <footer class="attribution">
+      <small>
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/Ahmed-let-front">Ahmed yasser</a>.</small
+      >
+    </footer>
+  </body>
+</html>
